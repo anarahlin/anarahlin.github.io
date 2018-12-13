@@ -5,29 +5,6 @@
 			{% assign current = page.url | downcase | split: '/' %}
 			<br>
 			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br> 
-			<br>
-			<br> <!-- this totally works to bring the links down below the image! 10 -->
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br> <!-- 20 -->
-			<br> <!-- to edit the font style of the links below, <a style="font-weight:bold" href="/index.html">About</a></li> -->
-			<br>
-			<br>
-			<br>
-			<br>
 			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a style="font-weight:bold"  href="/index.html">About</a></li>
 			<li {% if current[1] == 'research.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/research.html">Research</a></li>
 			<li {% if current[1] == 'publications.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/publications.html">Publications</a></li>
