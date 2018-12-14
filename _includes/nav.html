@@ -2,7 +2,7 @@
 	<!-- Nav -->
 	<nav id="nav">
 		<ul>
-			<h1> Anastasia Rahlin </h1>
+			<br>
 			{% assign current = page.url | downcase | split: '/' %}
 			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a style="font-weight:bold"  href="/index.html">About</a></li>
 			<li {% if current[1] == 'research.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/research.html">Research</a></li>
