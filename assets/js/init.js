@@ -37,7 +37,7 @@ skel.init({
 				breakpoints: 'mobile',
 				position: 'left',
 				style: 'reveal',
-				size: '80%',
+				size: '70%',        /* !!!!!!!!!!!!!!used to be 80% !!!!!!!!!!!!!!!!!!!!!!!*/
 				html: '<div data-action="navList" data-args="nav"></div>'
 			}
 		},
