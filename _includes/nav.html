@@ -39,7 +39,8 @@
   			font-weight: bold;
 			color: #999966;
 		    }
-			
+		
+		/* makes a class called "responsive" which allows you to scale any photo for mobile if you indicate the class "responsive" when pasting the src image on the appropriate page */	
 		.responsive {
  		width: 100%;
   		max-width: 800px;
@@ -67,7 +68,10 @@
 			<br>
 			<br>
 			<br>
-			{% assign current = page.url | downcase | split: '/' %}
+			{% assign current = page.url | downcase | split: '/'
+			font-size: calc(20px + (200 - 20) * ((100vw - 250px) / (1800 - 250))); 
+			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 250px)/(1800 - 250))); 
+			%} <!-- the class is defined here, all you have to do is scale it-->
 			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a style="font-weight:bold"  href="/index.html">About</a></li>
 			<li {% if current[1] == 'research.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/research.html">Research</a></li>
 			<li {% if current[1] == 'publications.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/publications.html">Publications</a></li>
