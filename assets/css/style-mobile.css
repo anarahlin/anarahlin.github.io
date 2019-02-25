@@ -22,8 +22,8 @@
 
 	h2, h3, h4, h5, h6
 	{
-		line-height: .8em; /* used to be line-height: 1em; */
-		font-size: 1em; /* used to be font-size: 1.5em; */
+		line-height: 1em; /* used to be line-height: 1em; */
+		font-size: 1.5em; /* used to be font-size: 1.5em; */
 	}
 
 	section,
@@ -63,12 +63,12 @@
 	
 		header h2
 		{
-			font-size: 1em; /* used to be font-size: 2em; */
+			font-size: 2em; /* used to be font-size: 2em; */
 		}
 
 		header .byline
 		{
-			font-size: 0.8em; /* used to be font-size: 1.2em; */
+			font-size: 1.2em; /* used to be font-size: 1.2em; */
 		}
 
 	.button
@@ -197,13 +197,13 @@
 
 	#main
 	{
-		padding: 4em 0em 2em 0em;
+		padding: 6em 0em 2em 0em; /* used to be padding: 4em 0em 2em 0em; */
 	}
 
 	.homepage #content header h2
 	{
 		padding: 0.70em 0em;
-		font-size: 1em; /* used to be font-size: 1.4em; */
+		font-size: 1.4em; /* used to be font-size: 1.4em; */
 	}
 
 	#sidebar h2
