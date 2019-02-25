@@ -42,7 +42,7 @@
 
 	.homepage #header
 	{
-		padding: 20em 0 8em 0; /*used to be 16em 0 12em 0; then 10 0 8 0 */
+		padding: 16em 0 12em 0; /*used to be 16em 0 12em 0; then 10 0 8 0; does not change header padding AFAIK */
 	}
 
 /*********************************************************************************/
