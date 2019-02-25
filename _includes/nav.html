@@ -25,13 +25,16 @@
 			
 		h4 { 
 			display: block;
-			font-size: 7em;
+			font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); /*used to be 7em */
+			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); /* this line is completely new */
 			margin-top: -.6em;
  			margin-bottom: 0.6em;
  			margin-left: 0;
   			margin-right: 0;
   			font-weight: bold;
 			color: #999966;
+			
+			
 		    }
 		</style>
 		</head>
@@ -45,6 +48,7 @@
 	<nav id="nav">
 		
 		<ul>
+			<br>
 			<br>
 			<br>
 			<br>
