@@ -17,13 +17,13 @@
 
 	body
 	{
-		padding-top: 44px;
+		padding-top: 60px; /* used to be padding-top: 44px; */
 	}
 
 	h2, h3, h4, h5, h6
 	{
-		line-height: 1em;
-		font-size: 1.5em;
+		line-height: .8em; /* used to be line-height: 1em; */
+		font-size: 1em; /* used to be font-size: 1.5em; */
 	}
 
 	section,
@@ -58,17 +58,17 @@
 
 	header
 	{
-		margin-bottom: 1.6em;
+		margin-bottom: 1em; /* used to be margin-botton: 1.6em; */
 	}
 	
 		header h2
 		{
-			font-size: 2em;
+			font-size: 1em; /* used to be font-size: 2em; */
 		}
 
 		header .byline
 		{
-			font-size: 1.2em;
+			font-size: 0.8em; /* used to be font-size: 1.2em; */
 		}
 
 	.button
@@ -170,7 +170,7 @@
 
 	#header
 	{
-		height: 10em;
+		height: 8em; /* used to be height: 10em; */
 		padding: 0;
 		background-position: center center;
 		background-attachment: scroll;
@@ -203,7 +203,7 @@
 	.homepage #content header h2
 	{
 		padding: 0.70em 0em;
-		font-size: 1.4em;
+		font-size: 1em; /* used to be font-size: 1.4em; */
 	}
 
 	#sidebar h2
