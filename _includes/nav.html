@@ -72,11 +72,48 @@
 			font-size: calc(20px + (200 - 20) * ((100vw - 250px) / (1800 - 250))); 
 			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 250px)/(1800 - 250))); 
 			%} <!-- the class is defined here, all you have to do is scale it-->
-			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a style="font-weight:bold"  href="/index.html">About</a></li>
-			<li {% if current[1] == 'research.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/research.html">Research</a></li>
-			<li {% if current[1] == 'publications.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/publications.html">Publications</a></li>
-			<li {% if current[1] == 'outreach.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/outreach.html">Outreach</a></li>
-			<li {% if current[1] == 'CV.html' %}class='current'{% endif %}><a style="font-weight:bold" href="/cv.html">CV</a></li>
+			<li 
+			    {% if current[1] == 'index.html' %}
+			    class='current' {% endif %}>
+				<a style="font-weight:bold"  href="/index.html" "font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))">
+					About
+				</a>
+			</li>
+			
+			
+			
+			<li 
+			    {% if current[1] == 'research.html' %}
+			    class='current'{% endif %}>
+				<a style="font-weight:bold" href="/research.html" "font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))">
+					Research
+				</a>
+			</li>
+			
+			
+			<li 
+			    {% if current[1] == 'publications.html' %}
+			    class='current'{% endif %}>
+				<a style="font-weight:bold" href="/publications.html" "font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))">
+					Publications
+				</a>
+			</li>
+			
+			<li 
+			    {% if current[1] == 'outreach.html' %}
+			    class='current'{% endif %}>
+				<a style="font-weight:bold" href="/outreach.html" "font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))">
+					Outreach
+				</a>
+			</li>
+			
+			<li 
+			    {% if current[1] == 'CV.html' %}
+			    class='current'{% endif %}>
+				<a style="font-weight:bold" href="/cv.html" "font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))">
+					CV
+				</a>
+			</li>
 			
 		</ul>
 	</nav>
