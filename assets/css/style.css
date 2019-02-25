@@ -888,7 +888,7 @@
 			#nav > ul > li > span
 			{
 				display: inline-block;
-				padding: 1em 1.5em; /* used to be padding: 1.5em 1.5em;*/
+				padding: 1.1em 1.5em; /* used to be padding: 1.5em 1.5em; THIS IS WHAT MAKES THE NAV LINKS MOVE UP*/
 				letter-spacing: 0.06em;
 				text-decoration: none;
 				text-transform: uppercase;
