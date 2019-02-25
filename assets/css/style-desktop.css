@@ -18,7 +18,7 @@
 
 	header
 	{
-		margin-bottom: 1.2em; /* used to be 1.6em; */
+		margin-bottom: 1em; /* used to be 1.6em; */
 	}
 	
 		header h2
@@ -37,7 +37,7 @@
 
 	#header
 	{
-		padding: 10em 0 6em 0;
+		padding: 8em 0 6em 0; /* top right bottom left padding, used to be 10em 0 6em 0; */
 	}
 
 	.homepage #header
