@@ -40,6 +40,24 @@
 			color: #999966;
 		    }
 		
+			
+		h5 { 
+			display: block;
+			
+			/* font size help: https://css-tricks.com/books/volume-i/scale-typography-screen-size/
+			  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+			*/
+			
+			font-size: calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100))); /*used to be 7em */
+			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 250px)/(1800 - 250))); /* this line is completely new */
+			margin-top: -1em; /*used to be -0.6em */
+ 			margin-bottom: 0.6em;
+ 			margin-left: 0;
+  			margin-right: 0;
+  			font-weight: bold;
+			color: #999966;
+		    }
+			
 		/* makes a class called "responsive" which allows you to scale any photo for mobile if you indicate the class "responsive" when pasting the src image on the appropriate page */	
 		.responsive {
  		width: 100%;
@@ -88,7 +106,7 @@
 			    class='current'{% endif %}>
 				<a style="font-weight:bold; font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))" 
 				   href="/research.html" >
-					Research
+					<h5> Research </h5>
 				</a>
 			</li>
 			
@@ -98,7 +116,7 @@
 			    class='current'{% endif %}>
 				<a style="font-weight:bold; font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))" 
 				   href="/publications.html" >
-					Publications
+					<h5>Publications </h5>
 				</a>
 			</li>
 			
@@ -107,7 +125,7 @@
 			    class='current'{% endif %}>
 				<a style="font-weight:bold; font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))" 
 				   href="/outreach.html" >
-					Outreach
+					<h5> Outreach </h5>
 				</a>
 			</li>
 			
@@ -116,7 +134,7 @@
 			    class='current'{% endif %}>
 				<a style="font-weight:bold; font-size:calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100)))" 
 				   href="/cv.html" >
-					CV
+					<h5> CV </h5>
 				</a>
 			</li>
 			
