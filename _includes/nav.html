@@ -48,9 +48,9 @@
 			  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 			*/
 			
-			font-size: calc(1px + (40 - 1) * ((100vw - 100px) / (1800 - 100))); /*used to be 7em */
-			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1800 - 200))); /* this line is completely new */
-			margin-top: 0.1em; /*used to be -0.6em then changed to -1em then back, this definitely moves the links down if you make it bigger */
+			font-size: calc(0.1px + (40 - 0.1) * ((100vw - 10px) / (1800 - 10))); /*used to be 7em */
+			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 10px)/(1800 - 10))); /* this line is completely new */
+			margin-top: 0.1em; /*used to be -0.6em then changed to -1em then back, this definitely moves the links down if you make it bigger, and can be used instead of long lines of <br> */
  			margin-bottom: 0.6em;
  			margin-left: 0;
   			margin-right: 0;
@@ -82,10 +82,6 @@
 		
 		<ul>
 			<br> 
-			<br>
-			<br>
-			<br>
-			<br>
 			<br>
 			<br>
 			{% assign current = page.url | downcase | split: '/'
