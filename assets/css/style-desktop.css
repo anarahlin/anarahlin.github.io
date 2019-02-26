@@ -37,7 +37,7 @@
 
 	#header
 	{
-		padding: 10em 0 6em 0; /* top right bottom left padding, does not change header padding AFAIK */
+		padding: 5em 0 6em 0; /*  10em 0 6em 0 top right bottom left padding, does not change header padding AFAIK */
 	}
 
 	.homepage #header
