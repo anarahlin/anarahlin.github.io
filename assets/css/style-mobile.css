@@ -107,8 +107,8 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 80px;
-			height: 60px;
+			width: calc(20px + 0.25vw);/* used to be 80px; changed to dynamic */
+			height: calc(10px + 0.25vw); /* used to be 60px; changed to dynamic */
 		}
 
 			#titleBar .toggle:after
