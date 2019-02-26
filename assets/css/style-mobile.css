@@ -17,7 +17,7 @@
 
 	body
 	{
-		padding-top: 60px; /* used to be padding-top: 44px; */
+		padding-top: 20px; /* used to be padding-top: 44px; then 60px and it got too big */
 	}
 
 	h2, h3, h4, h5, h6
