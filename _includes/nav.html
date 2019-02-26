@@ -48,14 +48,14 @@
 			  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 			*/
 			
-			font-size: calc(20px + (100 - 20) * ((100vw - 100px) / (1800 - 100))); /*used to be 7em */
-			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 250px)/(1800 - 250))); /* this line is completely new */
-			margin-top: -1em; /*used to be -0.6em */
+			font-size: calc(1px + (40 - 1) * ((100vw - 100px) / (1800 - 100))); /*used to be 7em */
+			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1800 - 200))); /* this line is completely new */
+			margin-top: -0.6em; /*used to be -0.6em then changed to -1em then back */
  			margin-bottom: 0.6em;
  			margin-left: 0;
   			margin-right: 0;
   			font-weight: bold;
-			color: #999966;
+			color: #FFFFFF;
 		    }
 			
 		/* makes a class called "responsive" which allows you to scale any photo for mobile if you indicate the class "responsive" when pasting the src image on the appropriate page */	
@@ -68,7 +68,7 @@
 		</style>
 		</head>
 		<body>
-			<br> <!-- what about here?-->
+			<br> <!-- what about here? yes this makes a nice space-->
 			<h4>Anastasia Rahlin  <!-- adding <br> here really makes the black envelope bigger-->
 
 			</h4>
@@ -95,7 +95,7 @@
 			    class='current' {% endif %}>
 				<a style="font-weight:bold" 
 				   href="/index.html">
-					About
+					<h5>About</h5>
 				</a>
 			</li>
 			
@@ -106,7 +106,7 @@
 			    class='current'{% endif %}>
 				<a style="font-weight:bold" 
 				   href="/research.html" >
-					Research
+					<h5>Research</h5>
 				</a>
 			</li>
 			
@@ -116,7 +116,7 @@
 			    class='current'{% endif %}>
 				<a style="font-weight:bold" 
 				   href="/publications.html" >
-					Publications
+					<h5>Publications</h5>
 				</a>
 			</li>
 			
@@ -125,7 +125,7 @@
 			    class='current'{% endif %}>
 				<a style="font-weight:bold" 
 				   href="/outreach.html" >
-					Outreach
+					<h5>Outreach</h5>
 				</a>
 			</li>
 			
@@ -134,7 +134,7 @@
 			    class='current'{% endif %}>
 				<a style="font-weight:bold" 
 				   href="/cv.html" >
-					 CV
+					 <h5>CV</h5>
 				</a>
 			</li>
 			
