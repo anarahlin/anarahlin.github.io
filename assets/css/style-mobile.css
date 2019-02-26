@@ -18,7 +18,7 @@
 	body
 	{
 		padding-top: calc(1px + 0.5vw); /* used to be padding-top: 44px; then 60px and it got too big on top */
-		padding-bottom: calc(80px + 0.5vw); /* used to not be a line at all */
+		padding-bottom: calc(200px + 0.5vw); /* used to not be a line at all, then used to be 80px + 0.5vw */
 	}
 
 	h2, h3, h4, h5, h6
