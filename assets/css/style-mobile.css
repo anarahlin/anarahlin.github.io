@@ -24,7 +24,8 @@
 	h2, h3, h4, h5, h6
 	{
 		line-height: 1em; /* used to be line-height: 1em; */
-		font-size: 1.5em; /* used to be font-size: 1.5em; */
+		font-size: calc(0.01px + (25 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1))); /*used to be 7em */
+ /* used to be font-size: 1.5em; */
 	}
 
 	section,
