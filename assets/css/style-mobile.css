@@ -26,9 +26,9 @@
 /* this is new 6.20.19, this dictates the amount of white space between the header photo and "welcome". tried to change the font size of "welcome!" by making it dynamic  */
 	header
 	{
-		margin-top: 2em; /*new to see if it moves Anastasia Rahlin down or makes black box smaller? */
-		margin-bottom: 3em; /* used to be 1.6em; then at 1em this does not change how the Research| CV links show up */
-		font-size: calc(0.01px + (25 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1)));
+		margin-top: 2em; /*moves Welcome down */
+		margin-bottom: 1em; /* how much space there is between the bottom of Welcome and next words below */
+		
 	}
 
 	h2, h3, h4, h5, h6
