@@ -23,11 +23,11 @@
 		/*try putting some of the links here if you can, you can just have them show up one under the other. And you can force their color to be different by wrapping them in different headers. AND as a bonus, that means the links would appear on each page. But then you wouldn't want to make them too big. */
 	}
 
-/* this is new 6.20.19 */
-/*	header
-/*	{
-/*		margin-top: -0.5em; /*new to see if it moves Anastasia Rahlin down or makes black box smaller? */
-/*		margin-bottom: 1em; /* used to be 1.6em; then at 1em this does not change how the Research| CV links show up */
+/* this is new 6.20.19, this dictates the amount of white space between the header photo and "welcome".  */
+	header
+	{
+		margin-top: 0.5em; /*new to see if it moves Anastasia Rahlin down or makes black box smaller? */
+		margin-bottom: 0.5em; /* used to be 1.6em; then at 1em this does not change how the Research| CV links show up */
 	}
 
 	h2, h3, h4, h5, h6
@@ -37,10 +37,10 @@
  /* used to be font-size: 1.5em; */
 	}
 
-/*this is new */
+/*this is new, and changes the size of "Welcome!"*/
 header .byline
 		{
-			font-size: 1.7em;
+			font-size: 0.5em; /*was 1.7em which made "Welcome!" really big */
 		}
 
 /*********************************************************************************************/
