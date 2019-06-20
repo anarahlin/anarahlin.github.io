@@ -31,7 +31,7 @@
 		
 	}
 
-/*new 6.20.19 */	
+/*new 6.20.19, dictates the size of "Welcome!" */	
 	header h2
 		{
 			font-size: 3.4em;
@@ -51,6 +51,26 @@
 			font-size: 0.5em; /*was 1.7em which made "Welcome!" really big */
 /*		}
 */
+
+/* this is new 6.20.19 to try to chance the size of Anastasia Rahlin */
+	h4 { 
+		
+			display: block;
+			
+			/* font size help: https://css-tricks.com/books/volume-i/scale-typography-screen-size/
+			  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+			*/
+			
+			font-size: calc(1px + (4 - 1) * ((100vw - 50px) / (300 - 50))); /*used to be 7em, then 250 instead of 200 and 20 instead of 15*/
+			/*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1800 - 200))); /* this line is completely new */
+			margin-top: -1.5em; /* -20vw; calc(0.01px + (1 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1))); /*used to be -1.3em, should make these dynamic as well! */
+ 			margin-bottom: 5em; /*should make this dynamic as well! it makes the black box smaller, was -1 */
+ 			margin-left: 0;
+  			margin-right: 0;
+  			font-weight: bold;
+			color: #999966;
+		    }
+		
 
 /*********************************************************************************************/
 /* end Basic                                                                                 */
