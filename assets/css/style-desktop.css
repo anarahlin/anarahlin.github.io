@@ -38,8 +38,7 @@
 
 	#header
 	{
-		padding: 12em 0 6em 0; /*  10em 0 6em 0 top right bottom left padding, does not change black header padding AFAIK but what it 
-		does change is how far ANASTASIA RAHLIN shows up on the page when the desktop webpage is full size, larger than 10 is bad, smaller than 10 is bad*/
+		padding: 12em 0 6em 0; /*  10em 0 6em 0 top right bottom left padding, does not change black header padding AFAIK but what it does change is how far ANASTASIA RAHLIN shows up on the page when the desktop webpage is full size, larger than 10 is bad, smaller than 10 is bad*/
 	}
 
 	.homepage #header
