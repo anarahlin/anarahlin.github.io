@@ -15,19 +15,19 @@
 		letter-spacing: 0;
 	}
 
-/*tried getting rid of everything specified in the body but it made WELCOME really big */
+/*tried getting rid of everything specified in the body but it didn't seem to do anything */
 	body
 	{
-		padding-top: calc(0px + 0.5vw); /* used to be padding-top: 44px; then 60px and it got too big on top */
-		padding-bottom: calc(0px + 0.5vw); /* used to not be a line at all, then used to be 80px + 0.5vw, might be the bottom of the page getting phat */
+		/*padding-top: calc(0px + 0.5vw); /* used to be padding-top: 44px; then 60px and it got too big on top */
+		/*padding-bottom: calc(0px + 0.5vw); /* used to not be a line at all, then used to be 80px + 0.5vw, might be the bottom of the page getting phat */
 		/*try putting some of the links here if you can, you can just have them show up one under the other. And you can force their color to be different by wrapping them in different headers. AND as a bonus, that means the links would appear on each page. But then you wouldn't want to make them too big. */
 	}
 
 /* this is new 6.20.19 */
-	header
-	{
-		margin-top: -0.5em; /*new to see if it moves Anastasia Rahlin down or makes black box smaller? */
-		margin-bottom: 1em; /* used to be 1.6em; then at 1em this does not change how the Research| CV links show up */
+/*	header
+/*	{
+/*		margin-top: -0.5em; /*new to see if it moves Anastasia Rahlin down or makes black box smaller? */
+/*		margin-bottom: 1em; /* used to be 1.6em; then at 1em this does not change how the Research| CV links show up */
 	}
 
 	h2, h3, h4, h5, h6
