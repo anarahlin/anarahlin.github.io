@@ -1,34 +1,150 @@
+/*
+Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
 
 body,input,textarea,select
-	{
-		line-height: 1.75em;
-		font-size: 10.5pt;
-		letter-spacing: 0;
-	}
+{
+line-height: 1.75em;
+font-size: 10.5pt;
+letter-spacing: 0;
+}
 
+/*tried getting rid of everything specified in the body but it didn't seem to do anything */
 body
 {
-	padding-top: calc(0px+0.5vw);
-	padding-bottom: calc(0px+0.5vw);
+padding-top: calc(0px + 0.5vw); /* used to be padding-top: 44px; then 60px and it got too big on top */
+padding-bottom: calc(0px + 0.5vw); /* used to not be a line at all, then used to be 80px + 0.5vw, might be the bottom of the page getting phat */
+/*try putting some of the links here if you can, you can just have them show up one under the other. And you can force their color to be different by wrapping them in different headers. AND as a bonus, that means the links would appear on each page. But then you wouldn't want to make them too big. */
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 1000px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 900px
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 1;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">.</a>
+  <div id="myLinks">
+    <a href="#news">About</a>
+    <a href="#contact">Research</a>
+    <a href="#about">Publications</a>
+    <a href="#about">Outreach</a>
+    <a href="#about">CV</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Vertical Mobile Navbar</h3>
+  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
+}
+
+/* this is new 6.20.19, this dictates the amount of white space between the header photo and "welcome". tried to change the font size of "welcome!" by making it dynamic  */
+header
+{
+margin-top: 2em; /*moves Welcome down */
+margin-bottom: 1em; /* how much space there is between the bottom of Welcome and next words below */
+
+}
+
+/*new 6.20.19, dictates the size of "Welcome!" */	
+header h2
+{
+font-size: 3.4em;
 }
 
 
-/* this is new 6.20.19, this dictates the amount of white space between the header photo and "welcome". tried to change the font size of "welcome!" by making it dynamic  */
-	header
-	{
-		margin-top: 2em; /*moves Welcome down, used to be 2em */
-		margin-bottom: 1em; /* how much space there is between the bottom of Welcome and next words below */
-		
-	}
-
-
-/*new as of 6.20.19 removed h4 from this; does not change the size of Welcomey */
-	h2, h3, h4, h5, h6
-	{
-		line-height: 1em; /* used to be line-height: 1em; */
-		font-size: calc(0.01px + (25 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1))); /*used to be 7em */
+/*new as of 6.20.19 removed h4 from this */
+h2, h3, h4, h5, h6
+{
+line-height: 1em; /* used to be line-height: 1em; */
+font-size: calc(0.01px + (25 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1))); /*used to be 7em */
  /* used to be font-size: 1.5em; */
-	}
+}
 
 /*this is new, and changes the size of "Welcome!"*/
 /*header .byline
@@ -37,11 +153,14 @@ font-size: 0.5em; /*was 1.7em which made "Welcome!" really big */
 /*	}
 */
 
+
+
+
 /*********************************************************************************************/
 /* end Basic                                                                                 */
 /*********************************************************************************************/
 
-/*not sure what this does */
+
 section,
 article
 {
@@ -49,25 +168,21 @@ clear: both;
 margin: 2em 0 2em 0 !important;
 }
 
-/*not sure what this does */
 section > :first-child,
 article > :first-child
 {
 margin-top: 0 !important;
 }
 
-/*not sure what this does but possibly makes the font smaller and gives more white space below "welcome" */
 section:first-child,
 article:first-child
 {
 margin-top: 0 !important;
 }
 
-/*places more white space at margins of text that says "Please feel free to contact me, I want to collaborate, etc */
 .container
 {
 padding: 0em 1em;
-top: 60%;
 }
 
 hr
@@ -76,20 +191,17 @@ margin: 2em 0 0 0; /*used to be 3em */
 padding: 2em 0 0 0; /*used to be 3em */
 }
 
-/*apparently does nothing, definitely does not create a visible button */
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  margin-top: 25px;
-  cursor: pointer;
+
+.button
+{
+display: block;
+width: 100%;
+text-align: center;
 }
+
+/*********************************************************************************/
+/* UI                                                                            */
+/*********************************************************************************/
 
 #titleBar
 {
@@ -98,13 +210,14 @@ background: #161616;
 
 #titleBar .title a
 {
-//display: block;
+display: block;
 color: #fff;
 text-align: center;
 line-height: 10px; /*used to be 44px; changed to be dynamic */
 font-weight: 300;
 text-decoration: none;
 }
+
 
 #titleBar .tag
 {
@@ -138,4 +251,135 @@ opacity: 0.5;
 opacity: 0.75;
 }
 
+#navPanel
+{
+background: #1f1f1f;
+}
 
+#navPanel .link
+{
+display: block;
+color: #888;
+text-decoration: none;
+height: 10px; /* used to be 44px; */
+line-height: 10px; /* used to be 44px; */
+border-top: solid 1px;
+border-color: rgba(255,255,255,.05);
+padding: 0 1em 0 1em;
+letter-spacing: 1px;
+}
+
+#navPanel .link:first-child
+{
+border-top: 0;
+}
+
+#navPanel .link.depth-0
+{
+color: #fff;
+}
+
+#navPanel .indent-1 { display: inline-block; width: 1em; }
+#navPanel .indent-2 { display: inline-block; width: 2em; }
+#navPanel .indent-3 { display: inline-block; width: 3em; }
+#navPanel .indent-4 { display: inline-block; width: 4em; }
+#navPanel .indent-5 { display: inline-block; width: 5em; }
+#navPanel .depth-0 { color: #fff; }
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header
+{
+height: 5em; /* used to be height: 10em; */
+padding: 0;
+background-position: center center;
+background-attachment: scroll;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+display: none;
+}
+
+#nav
+{
+display: none;
+}
+
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+#main
+{
+padding: 4em 0em 2em 0em; /* used to be padding: 4em 0em 2em 0em; then changed to 6 0 2 0 */
+}
+
+.homepage #content header h2
+{
+padding: 0.70em 0em;
+font-size: 1.4em; /* used to be font-size: 1.4em; */
+}
+
+#sidebar h2
+{
+font-size: 1.8em;
+}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+#footer
+{
+padding: 4em 0em 2em 0em;
+}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+#featured
+{
+padding: 4em 0em 3em 0em;
+}
+
+#featured h3
+{
+padding: 1.5em 0em;
+font-size: 1.4em;
+}
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+#welcome
+{
+padding: 4em 0em 3em 0em;
+}
+
+/*********************************************************************************/
+/* Tweet                                                                         */
+/*********************************************************************************/
+
+#tweet
+{
+padding: 3em 0em 1em 0em;
+background-position: center center;
+background-attachment: scroll;
+}
+
+#tweet blockquote
+{
+margin: 0;
+padding: 1em 1em;
+font-size: 1.2em;
+} 
