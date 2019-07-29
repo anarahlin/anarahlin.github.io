@@ -156,10 +156,19 @@ article > :first-child
 margin-top: 0 !important;
 }
 
+/*not sure what this does but possibly makes the font smaller and gives more white space below "welcome" */
 section:first-child,
 article:first-child
 {
 margin-top: 0 !important;
 }
+
+.container
+{
+padding: 0em 1em;
+}
+
+
+
 
 
