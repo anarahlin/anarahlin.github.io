@@ -296,6 +296,7 @@ height: 5em; /* used to be height: 10em; */
 padding: 0;
 background-position: center center;
 background-attachment: scroll;
+content: "Hello";
 }
 
 /*********************************************************************************/
