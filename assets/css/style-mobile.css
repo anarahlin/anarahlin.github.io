@@ -29,6 +29,8 @@ body {
   height: 1000px;
   color: white;
   border-radius: 10px;
+  position: relative;
+  z-index: 999;
 }
 
 .topnav {
