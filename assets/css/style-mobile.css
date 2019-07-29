@@ -163,11 +163,17 @@ article:first-child
 margin-top: 0 !important;
 }
 
+/*places more white space at margins of text that says "Please feel free to contact me, I want to collaborate, etc */
 .container
 {
 padding: 0em 1em;
 }
 
+hr
+{
+margin: 2em 0 0 0; /*used to be 3em */
+padding: 2em 0 0 0; /*used to be 3em */
+}
 
 
 
