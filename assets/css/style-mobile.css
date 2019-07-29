@@ -195,3 +195,46 @@ padding: 2em 0 0 0; /*used to be 3em */
 background: #161616;
 }
 
+#titleBar .title a
+{
+display: block;
+color: #fff;
+text-align: center;
+line-height: 10px; /*used to be 44px; changed to be dynamic */
+font-weight: 300;
+text-decoration: none;
+}
+
+#titleBar .tag
+{
+display: none;
+}
+
+#titleBar .toggle
+{
+position: absolute;
+left: 0;
+top: 0;
+width: 30px; /* calc(20px + 0.25vw); used to be 80px; changed to dynamic */
+height: 10px; /* used to be 60px; changed to dynamic */
+}
+
+#titleBar .toggle:after
+{
+content: '';
+display: block;
+width: 20px;
+height: 12px;
+position: absolute;
+left: 10px;
+top: 15px;
+background: url('images/toggle.svg') 0px 0px no-repeat;
+opacity: 0.5;
+}
+
+#titleBar .toggle:active:after
+{
+opacity: 0.75;
+}
+
+
