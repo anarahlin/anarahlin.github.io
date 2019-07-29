@@ -21,39 +21,8 @@
 		padding-top: calc(0px + 0.5vw); /* used to be padding-top: 44px; then 60px and it got too big on top */
 		padding-bottom: calc(0px + 0.5vw); /* used to not be a line at all, then used to be 80px + 0.5vw, might be the bottom of the page getting phat */
 		/*try putting some of the links here if you can, you can just have them show up one under the other. And you can force their color to be different by wrapping them in different headers. AND as a bonus, that means the links would appear on each page. But then you wouldn't want to make them too big. */
-	}
-
-/* this is new 6.20.19, this dictates the amount of white space between the header photo and "welcome". tried to change the font size of "welcome!" by making it dynamic  */
-	header
-	{
-		margin-top: 2em; /*moves Welcome down */
-		margin-bottom: 1em; /* how much space there is between the bottom of Welcome and next words below */
 		
-	}
-
-/*new 6.20.19, dictates the size of "Welcome!" */	
-	header h2
-		{
-			font-size: 3.4em;
-		}
-
-
-/*new as of 6.20.19 removed h4 from this */
-	h2, h3, h4, h5, h6
-	{
-		line-height: 1em; /* used to be line-height: 1em; */
-		font-size: calc(0.01px + (25 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1))); /*used to be 7em */
- /* used to be font-size: 1.5em; */
-	}
-
-/*this is new, and changes the size of "Welcome!"*/
-/*header .byline
-/*		{
-			font-size: 0.5em; /*was 1.7em which made "Welcome!" really big */
-/*		}
-*/
-
-<!DOCTYPE html>
+		<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -152,6 +121,39 @@ function myFunction() {
 
 </body>
 </html>
+	}
+
+/* this is new 6.20.19, this dictates the amount of white space between the header photo and "welcome". tried to change the font size of "welcome!" by making it dynamic  */
+	header
+	{
+		margin-top: 2em; /*moves Welcome down */
+		margin-bottom: 1em; /* how much space there is between the bottom of Welcome and next words below */
+		
+	}
+
+/*new 6.20.19, dictates the size of "Welcome!" */	
+	header h2
+		{
+			font-size: 3.4em;
+		}
+
+
+/*new as of 6.20.19 removed h4 from this */
+	h2, h3, h4, h5, h6
+	{
+		line-height: 1em; /* used to be line-height: 1em; */
+		font-size: calc(0.01px + (25 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1))); /*used to be 7em */
+ /* used to be font-size: 1.5em; */
+	}
+
+/*this is new, and changes the size of "Welcome!"*/
+/*header .byline
+/*		{
+			font-size: 0.5em; /*was 1.7em which made "Welcome!" really big */
+/*		}
+*/
+
+
 		
 
 /*********************************************************************************************/
