@@ -197,7 +197,7 @@ background: #161616;
 
 #titleBar .title a
 {
-//display: block;
+display: block;
 color: #fff;
 text-align: center;
 line-height: 10px; /*used to be 44px; changed to be dynamic */
