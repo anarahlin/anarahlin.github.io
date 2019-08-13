@@ -78,18 +78,17 @@
 		<body>
 			
 		
+<!-- old nav stuff that doesn't oepn properly on a phone
 
 <div id="nav-wrapper">
 	
-	<!-- Nav  	font-size: calc(20px + (200 - 20) * ((100vw - 250px) / (1800 - 250))); 
-			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 250px)/(1800 - 250))); -->
+
 	<nav id="nav">
 		
 		<ul>
-			<!-- there were five <br>s  here as of 06.21.2019 and getting rid of them made the space between the links and Anastasia Rahlin be less. -->
 
 			{% assign current = page.url | downcase | split: '/'
-			%} <!-- the class is defined here, all you have to do is scale it-->
+			%} 
 			<li 
 			    {% if current[1] == 'index.html' %}
 			    class='current' {% endif %}>
@@ -143,7 +142,9 @@
 		
 	</nav>
 </div>
-			
+
+########end of old nav stuff that doesn't oepn properly on a phone -->
+
 
 <!-- new nav stuff
 
@@ -162,7 +163,7 @@
                 </button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling
+    ##########Collect the nav links, forms, and other content for toggling################
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
