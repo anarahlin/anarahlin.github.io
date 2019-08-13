@@ -77,107 +77,7 @@
 		</head>
 		<body>
 			
-		
-<!-- old nav stuff that doesn't oepn properly on a phone
-
-<div id="nav-wrapper">
-	
-
-	<nav id="nav">
-		
-		<ul>
-
-			{% assign current = page.url | downcase | split: '/'
-			%} 
-			<li 
-			    {% if current[1] == 'index.html' %}
-			    class='current' {% endif %}>
-				<a style="font-weight:bold" 
-				   href="/index.html">
-					<h5>About</h5>
-				</a>
-			</li>
 			
-			
-			
-			<li 
-			    {% if current[1] == 'research.html' %}
-			    class='current'{% endif %}>
-				<a style="font-weight:bold" 
-				   href="/research.html" >
-					<h5>Research</h5>
-				</a>
-			</li>
-			
-			
-			<li 
-			    {% if current[1] == 'publications.html' %}
-			    class='current'{% endif %}>
-				<a style="font-weight:bold" 
-				   href="/publications.html" >
-					<h5>Publications</h5>
-				</a>
-			</li>
-			
-			<li 
-			    {% if current[1] == 'outreach.html' %}
-			    class='current'{% endif %}>
-				<a style="font-weight:bold" 
-				   href="/outreach.html" >
-					<h5>Outreach</h5>
-				</a>
-			</li>
-			
-			<li 
-			    {% if current[1] == 'CV.html' %}
-			    class='current'{% endif %}>
-				<a style="font-weight:bold" 
-				   href="/cv.html" >
-					 <h5>CV</h5>
-				</a>
-			</li>
-			
-		</ul>
-		
-		
-	</nav>
-</div>
-
-########end of old nav stuff that doesn't oepn properly on a phone -->
-
-
-<!-- new nav stuff
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-    </div>
-
-    ##########Collect the nav links, forms, and other content for toggling################
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="/index.html">About</a></li>
-        <li><a href="/research.html">Research</a></li>
-        <li><a href="/publications.html">Publications</a></li>
-        <li><a href="/outreach.html">Outreach</a></li>
-        <li><a href="/cv.html">CV</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>			
-
-end new nav stuff -->		
 			
 <!-- new nav stuff editing old stuff to span the links appropriately? -->
 
@@ -185,6 +85,7 @@ end new nav stuff -->
 	
 	<!-- Nav  	font-size: calc(20px + (200 - 20) * ((100vw - 250px) / (1800 - 250))); 
 			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 250px)/(1800 - 250))); -->
+	
 	<nav id="nav">
 	<ul>
 	<!-- there were five <br>s  here as of 06.21.2019 and getting rid of them made the space between the links and Anastasia Rahlin be less. -->
