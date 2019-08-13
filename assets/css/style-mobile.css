@@ -129,7 +129,7 @@ function myFunction() {
 			font-size: 3.4em;
 		}
 
-/*new as of 6.20.19 removed h4 from this; I think actually this might change the font size of Welcome correctly */
+/*new as of 6.20.19 removed h4 from this */
 	h2, h3, h4, h5, h6
 	{
 		line-height: 1em; /* used to be line-height: 1em; */
