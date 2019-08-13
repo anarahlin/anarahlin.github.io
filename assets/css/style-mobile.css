@@ -16,7 +16,7 @@ body
 /* this is new 6.20.19, this dictates the amount of white space between the header photo and "welcome". tried to change the font size of "welcome!" by making it dynamic  */
 	header
 	{
-		margin-top: 5em; /*moves Welcome down, used to be 2em */
+		margin-top: 2em; /*moves Welcome down */
 		margin-bottom: 1em; /* how much space there is between the bottom of Welcome and next words below */
 		
 	}
