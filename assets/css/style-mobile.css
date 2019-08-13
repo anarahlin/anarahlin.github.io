@@ -6,12 +6,6 @@ body,input,textarea,select
 		letter-spacing: 0;
 	}
 
-body
-{
-	padding-top: calc(0px+0.5vw);
-	padding-bottom: calc(0px+0.5vw);
-}
-
 <!DOCTYPE html>
 <html>
 <head>
