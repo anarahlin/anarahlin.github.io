@@ -175,7 +175,6 @@ margin: 2em 0 0 0; /*used to be 3em */
 padding: 2em 0 0 0; /*used to be 3em */
 }
 
-/*apparently does nothing, definitely does not create a visible button */
 .button {
   background-color: #4CAF50;
   border: none;
@@ -190,8 +189,5 @@ padding: 2em 0 0 0; /*used to be 3em */
   cursor: pointer;
 }
 
-#titleBar
-{
-background: #161616;
-}
+
 
