@@ -86,16 +86,13 @@ h6 {
    }
 
 .topnav {
+  position: relative;
   overflow: hidden;
   background-color: #000000;
 }
 
 .topnav a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  float: left;
   color: #f2f2f2;
   text-align: center;
   margin-top: 25px;
@@ -114,9 +111,33 @@ h6 {
   color: white;
 }
 
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+			
 .topnav-right {
   float: right;
-}	
+}
+			
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+/* end Responsive navigation menu (for mobile devices) */
 			
 </style>
 </head>
@@ -199,14 +220,27 @@ h6 {
 	<!--<ul>
 	{% assign current = page.url | downcase | split: '/' %}-->
 
+<!-- Top navigation -->
 <div class="topnav">
+
+<!-- Centered links -->
+  <div class="topnav-centered">
+	  <a href="/index.html" class="active"><h6>About</h6></a>
+	  <a href="/research.html"><h6>Research</h6></a>
+  	  <a href="/publications.html"><h6>Publications</h6></a>
+          <a href="/outreach.html"><h6>Outreach</h6></a>
+          <a href="/cv.html"><h6>CV</h6></a>
+  </div>
+</div>
+
+<!-- old links
   <a class="active" 
      href="/index.html"><h6>About</h6></a>
   <a href="/research.html"><h6>Research</h6></a>
   <a href="/publications.html"><h6>Publications</h6></a>
     <a href="/outreach.html"><h6>Outreach</h6></a>
     <a href="/cv.html"><h6>CV</h6></a>
-</div>
+</div> --end old links-->
 				
 			
 			
