@@ -22,20 +22,13 @@ body
 	}
 
 
-/*new as of 6.20.19 removed h4 from this; does not change the size of Welcomey */
+/*new as of 6.20.19 removed h4 from this; I think actually this might change the font size of Welcome correctly */
 	h2, h3, h4, h5, h6
 	{
 		line-height: 1em; /* used to be line-height: 1em; */
 		font-size: calc(0.01px + (25 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1))); /*used to be 7em */
  /* used to be font-size: 1.5em; */
 	}
-
-/*this is new, and changes the size of "Welcome!"*/
-/*header .byline
-/*	{
-font-size: 0.5em; /*was 1.7em which made "Welcome!" really big */
-/*	}
-*/
 
 /*********************************************************************************************/
 /* end Basic                                                                                 */
