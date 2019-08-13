@@ -80,15 +80,14 @@
 <!-- trying to see if this causes the old nav to come back? -->			
  <div id="nav-wrapper">
 	
-	font-size: calc(20px + (200 - 20) * ((100vw - 250px) / (1800 - 250))); 
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 250px)/(1800 - 250)));
-	
-	 <nav id="nav">
+	<!-- Nav  	font-size: calc(20px + (200 - 20) * ((100vw - 250px) / (1800 - 250))); 
+			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 250px)/(1800 - 250))); -->
+	<nav id="nav">
 
 		<ul>
-			<!-- there were five <br>s  here as of 06.21.2019 and getting rid of them made the space between the links and Anastasia Rahlin be less. -->
+			<!-- there were five <br>s  here as of 06.21.2019 and getting rid of them made the space between the links and Anastasia Rahlin be less.
 			{% assign current = page.url | downcase | split: '/'
-			%} <!-- the class is defined here, all you have to do is scale it -->
+			%} <!-- the class is defined here, all you have to do is scale it
 			<li 
 			    {% if current[1] == 'index.html' %}
 			    class='current' {% endif %}>
