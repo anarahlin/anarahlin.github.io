@@ -72,6 +72,18 @@
   		max-width: 800px;
   		height: auto;
 		}
+			
+h6 { 
+			/*controls size and color of the white links and the little lines between them */
+	display: block;
+	font-size: 7em;
+	margin-top: -0.6em; /*used to be -0.6em then changed to -2em then back, this definitely moves the links down if you make it bigger, and can be used instead of long lines of <br> */
+ 	margin-bottom: -0.1em; /*used to be 0.6em; curious if it makes the bottom of the black box header smaller */
+ 	margin-left: -0.1em;
+  	margin-right: -0.1em;
+  	font-weight: bold;
+	color: #FFFFFF;
+   }
 
 .topnav {
   overflow: hidden;
@@ -189,11 +201,11 @@
 
 <div class="topnav">
   <a class="active" 
-     href="/index.html"><h3>About</h3></a>
-  <a href="/research.html"><h3>Research</h3></a>
-  <a href="/publications.html"><h3>Publications</h3></a>
-    <a href="/outreach.html"><h3>Outreach</h3></a>
-    <a href="/cv.html"><h3>CV</h3></a>
+     href="/index.html"><h6>About</h6></a>
+  <a href="/research.html"><h6>Research</h6></a>
+  <a href="/publications.html"><h6>Publications</h6></a>
+    <a href="/outreach.html"><h6>Outreach</h6></a>
+    <a href="/cv.html"><h6>CV</h6></a>
 </div>
 				
 			
