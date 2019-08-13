@@ -141,19 +141,12 @@ function myFunction() {
 /* end Basic                                                                                 */
 /*********************************************************************************************/
 
-/*not sure what this does */
+
 section,
 article
 {
 clear: both;
 margin: 2em 0 2em 0 !important;
 }
-
-section > :first-child,
-article > :first-child
-{
-margin-top: 0 !important;
-}
-
 
 
