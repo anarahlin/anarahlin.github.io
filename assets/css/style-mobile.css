@@ -149,17 +149,11 @@ clear: both;
 margin: 2em 0 2em 0 !important;
 }
 
-/*not sure what this does */
 section > :first-child,
 article > :first-child
 {
 margin-top: 0 !important;
 }
 
-section:first-child,
-article:first-child
-{
-margin-top: 0 !important;
-}
 
 
