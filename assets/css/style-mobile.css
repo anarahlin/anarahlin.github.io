@@ -12,6 +12,108 @@ body
 	padding-bottom: calc(0px+0.5vw);
 }
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 1000px;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  z-index: 999;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 1;
+  top: 0;
+  z-index: 999;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">.</a>
+  <div id="myLinks">
+    <a href="#news">About</a>
+    <a href="#contact">Research</a>
+    <a href="#about">Publications</a>
+    <a href="#about">Outreach</a>
+    <a href="#about">CV</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Vertical Mobile Navbar</h3>
+  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
 
 /* this is new 6.20.19, this dictates the amount of white space between the header photo and "welcome". tried to change the font size of "welcome!" by making it dynamic  */
 	header
@@ -21,6 +123,11 @@ body
 		
 	}
 
+/*new 6.20.19, dictates the size of "Welcome!" or maybe doesn't do anything*/	
+	header h2
+		{
+			font-size: 3.4em;
+		}
 
 /*new as of 6.20.19 removed h4 from this; I think actually this might change the font size of Welcome correctly */
 	h2, h3, h4, h5, h6
