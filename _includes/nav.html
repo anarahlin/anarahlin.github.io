@@ -98,7 +98,7 @@ h8{
 /* Style the navigation menu */
 .topnav {
   width: 100%;
-  position: relative; /*might need to get rid of this line for menu to work properly? */
+  /* position: relative; /*might need to get rid of this line for menu to work properly? */
   overflow: hidden;
   background-color: #000000;
   z-index: 9;
@@ -140,7 +140,7 @@ h8{
 @media screen and (max-width: 640px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: left; /*changed from original https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+    float: right; /*right or left, changed from original https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
     display: block;
   }
 }
@@ -148,7 +148,7 @@ h8{
 @media screen and (max-width: 640px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: center; /*changed from original https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+    position: absolute; /*changed from original "absolute" https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
     right: 0;
     top: 0;
   }
