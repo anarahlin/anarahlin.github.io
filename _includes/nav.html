@@ -56,7 +56,7 @@
 			  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 			*/
 			
-			font-size: calc(0.01px + (25 - 0.1) * ((100vw - 0.1px) / (1800 - 0.1))); /*used to be 7em */
+			font-size: calc(3px + (30 - 3) * ((100vw - 0.01px) / (1800 - 0.01))); /*used to be 7em */
 			/*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 10px)/(1800 - 10))); this line is completely new */
 			margin-top: -0.6em; /*used to be -0.6em then changed to -2em then back, this definitely moves the links down if you make it bigger, and can be used instead of long lines of <br> */
  			margin-bottom: -0.1em; /*used to be 0.6em; curious if it makes the bottom of the black box header smaller */
@@ -73,7 +73,7 @@
   		height: auto;
 		}
 			
-h6 { 
+h7 { 
 			/*controls size and color of the white links and the little lines between them */
 	display: block;
 	font-size: 7em;
@@ -84,6 +84,24 @@ h6 {
   	font-weight: bold;
 	color: #FFFFFF;
    }
+			
+@media all and (min-width: 960px) {
+h6{
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+h6{
+    font-size: 5vw;
+  }
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+h6{
+    font-size: 6vw;
+  }
+}
 
 .topnav {
   position: relative;
@@ -226,11 +244,11 @@ h6 {
 
 <!-- Centered link -->
   <div class="topnav-centered">
-	  <a href="/index.html"><h5>About</h5></a>
-	  <a href="/research.html"><h5>Research</h5></a>
-  	  <a href="/publications.html"><h5>Publications</h5></a>
-          <a href="/outreach.html"><h5>Outreach</h5></a>
-          <a href="/cv.html"><h5>CV</h5></a>
+	  <a href="/index.html"><h6>About</h6></a>
+	  <a href="/research.html"><h6>Research</h6></a>
+  	  <a href="/publications.html"><h6>Publications</h6></a>
+          <a href="/outreach.html"><h6>Outreach</h6></a>
+          <a href="/cv.html"><h6>CV</h6></a>
   </div>
 </div>
 			
