@@ -1,6 +1,6 @@
 		
-		<html>
-		<head>
+<html>
+<head>
 
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -94,34 +94,6 @@ h8{
     color: #FFFFFF;
   }
 
-			
-@media all and (min-width: 960px) {
-h6{
-    font-size: 35px;
-    color: #FFFFFF;
-  }
-}
-
-@media all and (max-width: 959px) and (min-width: 600px) {
-h6{
-    font-size: 4vw;
-    color: #FFFFFF;
-  }
-}
-			
-@media all and (max-width: 659px) and (min-width: 400px) {
-h6{
-    font-size: 4.2vw;
-    color: #FFFFFF;
-  }
-}
-
-@media all and (max-width: 399px) and (min-width: 10px) {
-h6{
-    font-size: 15px;
-    color: #FFFFFF;
-  }
-}
 
 /* Style the navigation menu */
 .topnav {
@@ -142,7 +114,7 @@ h6{
   padding: 5px 35px;
   text-decoration: none;
   font-size: 20px;
-  width: 16.666667%; /* six equal-width links */
+  width: 20%; /* five equal-width links, 20% */
 }
 
 /* Add a background color on mouse-over */
@@ -187,33 +159,6 @@ h6{
   }
 }
 
-/* Responsive navigation menu (for mobile devices), greyed out 8.14.19 *****
-.topnav-centered a {
-  display: flex;
-  justify-content: center;
-}
-			
-.topnav-right {
-  float: right;
-}
-			
-/* Responsive navigation menu (for mobile devices), greyed out 8.14.19 *****
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-  
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-}
-/* end Responsive navigation menu (for mobile devices) */
-			
-
 			
 			
 </style>
@@ -224,14 +169,13 @@ h6{
 
 <!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon; id = myTopnav lets the links come down -->
 <div class="topnav" id="myTopnav">
-	  <a href="/index.html" class = "active"><h8>Home</h8></a>
-  	  <a href="/index.html"><h8>About</h8></a>
-	  <a href="/research.html"><h8>Research</h8></a>
-  	  <a href="/publications.html"><h8>Publications</h8></a>
-          <a href="/outreach.html"><h8>Outreach</h8></a>
-          <a href="/cv.html"><h8>CV</h8></a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+	<a href="/index.html"><h8>Home</h8></a>
+	<a href="/research.html"><h8>Research</h8></a>
+	<a href="/publications.html"><h8>Publications</h8></a>
+	<a href="/outreach.html"><h8>Outreach</h8></a>
+	<a href="/cv.html"><h8>CV</h8></a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
   </a>
 </div>
 			
@@ -245,8 +189,7 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-</script>			
-			
+</script>		
 			
 			
 			
