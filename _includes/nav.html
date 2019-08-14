@@ -151,13 +151,13 @@ h6{
   color: black;
 }
 
-/* Style the current/active link, I don't actually use this, but if you wanted a Home button you would, edited out 
+/* Style the current/active link, I don't actually use this, but if you wanted a Home button you would */
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
 }
 
------- edit out the current/active link */
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -168,7 +168,7 @@ h6{
 @media screen and (max-width: 640px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: left;
+    float: left; /*changed from original https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
     display: block;
   }
 }
@@ -176,7 +176,7 @@ h6{
 @media screen and (max-width: 640px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: center;
+    position: center; /*changed from original https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
     right: 0;
     top: 0;
   }
@@ -314,6 +314,7 @@ h6{
 
 <!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon; id = myTopnav lets the links come down -->
 <div class="topnav" id="myTopnav">
+	  <a href="/index.html" class = "active"><h8>Home</h8></a>
   	  <a href="/index.html"><h8>About</h8></a>
 	  <a href="/research.html"><h8>Research</h8></a>
   	  <a href="/publications.html"><h8>Publications</h8></a>
