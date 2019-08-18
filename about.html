@@ -2,34 +2,55 @@
 title: About
 layout: default
 ---
+<html>
+<head>
+	
 <!-- Featured -->
 <div id="featured">
-	<div class="container">
-		<style>
-			div.foo {
-  				line-height: 1.2;
-				font-size: 110%;
-				}
-		</style>
+<div class="container">
+<style>
+div.foo {
+  line-height: 1.2;
+  font-size: 110%;
+}
+
+<!-- attempts to put in clearfix so that text wraps around photos well -->
+div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}	
+
+.img1 {
+  padding: 10px;
+  float: left;
+}
+	
+
+</style>
+</head>
+<body>
+
 		
-		<header>
-			<h2>About</h2>
-		</header>
-		<div class="foo">
-<img src="/assets/images/mistnet2.PNG" alt="intrepid field biologist" class = "responsive">
-		<p align="left"> 
-
-My work focuses on integrating spatial, temporal, and behavioral data to better understand how to conserve declining bird species. I also spend time building bioinformatic pipelines to analyze metagenomics data and am slowly dipping a toe into using Bayesian models to integrate multiple datasets.
-
-<br><br>I collaborate with researchers at Audubon Great Lakes, the National Audubon Society, and the University of Illinois. I also periodically hire field technicians to help with fieldwork during spring and fall migration. Please contact me if you would like to work on a project together.
-
-			<br> 
-			<br>
-			Contact:rahlin1 [at] illinois [dot] .edu
-
-
+	<header>
+	<h2>About</h2>
+	</header>
+	
+	<div class="clearfix">
+	<img class = "img1" src="/assets/images/cheesin.jpg" alt="intrepid field biologist" width = "200" height = "auto">
 		
-		</p>
+	<p align="left"> 
+	My work focuses on integrating spatial, temporal, and behavioral data to better understand how to conserve declining bird species. I also spend time building bioinformatic pipelines to analyze metagenomics data and am slowly dipping a toe into using Bayesian models to integrate multiple datasets.
+
+<br><br>I collaborate with researchers at Audubon Great Lakes, the National Audubon Society, and the University of Illinois, and periodically hire technicians to help with fieldwork during spring and fall migration. If you would like to collaborate or be considered for a field technician position, please email me.
+
+<br><br>Contact:  rahlin1 [at] illinois [dot] .edu
+</p>
 		</div>
 
 	</div>
